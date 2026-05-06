@@ -9,6 +9,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineAppstore,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -76,6 +77,16 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/business-portfolio"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineAppstore style={{ marginBottom: "2px" }} /> Business Portfolio
               </Nav.Link>
             </Nav.Item>
 
